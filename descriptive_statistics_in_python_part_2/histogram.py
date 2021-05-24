@@ -1,0 +1,8 @@
+hist, bin_edges = np.histogram(x, bins=10)
+print(hist)
+print(bin_edges)
+fig, ax = plt.subplots()
+ax.hist(x, bin_edges, cumulative=False)
+ax.set_xlabel('x')
+ax.set_ylabel('Frequency')
+plt.show()

@@ -1,0 +1,8 @@
+x = np.arange(21)
+y = np.random.randint(21, size=21)
+err = np.random.randn(21)
+fig, ax = plt.subplots()
+ax.bar(x, y, yerr=err)
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+plt.show()
